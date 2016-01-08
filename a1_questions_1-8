@@ -1,0 +1,55 @@
+
+
+question 1
+Which of the following are operators, and which are values?
+* is an operator, it multiplies
+'hello' is a string, and therfore a value
+-88.8 is an integer and therefore a value
+- is an operator, it subtracts
+/ is an operator, it divides
++ is an operator, it adds
+5 is an ineger and therefore a value
+
+question 2
+spam is a variable
+'spam' is a string
+
+question 3
+name 3 datatypes, 
+char (a single charactor) 
+string (a series of charactors) 
+integer (a whole, rational, number)
+
+question 4
+what is an expression made of, and what do they do?
+an expression is a basic command to a computer, it takes in values, 
+manipulates those values with an operator, and evaluates down
+to an end result. 
+
+a vlaue with no operators can also act as an expression, but it 
+is one that does nothing.
+
+question 5
+what is the diffrenece between an expression and a statement? 
+an expression does a thing, (it evaluates) 
+a statement creates a thing.(assigns a value to a variable)
+
+question 6
+if the variable bacon starts out with a value of 20, and then you 
+run the expression bacon + 1, then bacon would be equal to 21.
+
+question 7
+'spam' is a string, when strings are considered the + operator instead of trying to add 
+mathematically that which is not anumber concatenates instead by adding one string to
+the end of another. when you multiply a string likewise you are asking a mathmatical
+operator to operate on a non-math thing. it thus acts as a for-loop that prints the 
+string for the requested number of times.
+
+'spam' + "spamspam" and 'spam' * 3 would both evaluate to spamspamspam but for 
+diffrent reasons
+
+question 8
+eggs is a valid variable name while 100 is not valid, because 100 is a number. 
+while eggs might be assigned as a variable to equal 100, 100 inherently has the 
+numerical value of 100. if you could tell the computer 100 = 5 things would get messy. 
+global variables are bad enough.

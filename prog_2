@@ -1,0 +1,112 @@
+ITC_110_prog2
+
+Q:1. What are the two values of the Boolean data type? How do you write them?
+1 or 0 also written as True or False
+
+Q:2. What are the three Boolean operators?
+And, Or, Not.
+
+Q:3. Write out the truth tables of each Boolean operator 
+(that is, every possible combination of Boolean values for the operator and what they evaluate to).
+
+true and true : true
+true and false : false
+false and true: false
+false and false : false
+
+true or true : true
+true or false : true
+false or true : true
+false or false : false
+
+not true : false
+not false : true
+
+Q:4. What do the following expressions evaluate to?
+
+(5 > 4) and (3 == 5)
+False
+
+not (5 > 4)
+False
+
+(5 > 4) or (3 == 5)
+True
+
+not ((5 > 4) or (3 == 5))
+False
+
+(True and True) and (True == False)
+False
+
+(not False) or (not True)
+True
+
+Q:5. What are the six comparison operators?
+< less than
+> greater than
+! not, is a little diffrent the bang sign modifies an operator 
+like so: != not equals, !< not less than, !> not greater than
+
+== equal to, written like this with double = to distingiuish 
+it from the assignment operator, when modified to work with
+ other variables python removes the first = mark so you cam make: 
+<= less than or equal to, >= greater than or equal to, or != not euqual to.
+
+
+Q:6. What is the difference between the equal to operator and the assignment operator?
+== is equal to, = is the assingment operator
+
+Q:7. Explain what a condition is and where you would use one.
+a condition is an expression that evaluates to a boolean value
+you might use one to check if you should trigger a part of your program to run.
+for example, if the player is in the room, then make the orcs attack, 
+
+Q:8. Identify the three blocks in this code:
+
+
+spam = 0  // starting value for the spam variable, is it's own block
+
+if spam == 10: 
+    print('eggs') //this indent shows we are looking at a new block of code
+    if spam > 5:
+        print('bacon') //this indent indicates the third block
+    else:
+        print('ham')
+    print('spam')
+print('spam')
+
+Q:9. Write code that prints Hello if 1 is stored in spam, 
+prints Howdy if 2 is stored in spam, and prints Greetings! 
+if anything else is stored in spam.
+ 
+ spam = 0
+ if spam == 1: 
+    print('Hello')
+    if spam == 2 :
+        print('Howdy') 
+    else:
+        print('Greetings!')
+    print('Greetings!')
+print(spam)
+
+Q:10. What can you press if your program is stuck in an infinite loop?
+[ctrl] + C
+
+Q:11. What is the difference between break and continue?
+
+break stops the flow and breaks out of the thing, continue skips a step and keeps going.
+
+Q:12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+
+range 10 goes from 
+
+Q:13. Write a short program that prints the numbers 1 to 10 
+using a for loop. Then write an equivalent program that 
+prints the numbers 1 to 10 using a while loop.
+
+Q:14. If you had a function named bacon() 
+inside a module named spam, how would you call it after importing spam?
+
+Extra credit: Look up the round() and abs() functions on the Internet,
+ and find out what they do. Experiment with them in the interactive shell.

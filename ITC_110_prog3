@@ -1,0 +1,51 @@
+ITC_110_prog3
+
+1.	Why are functions advantageous to have in your programs?
+They reduce the need to repeat yourself and they make you code more efficient and readable.
+
+2.	When does the code in a function execute: when the function is defined or when the function is called?
+When it is called.
+defining a function is what the programmer does when they write the program up, 
+calling the function is what the computer does when it runs it.
+
+3.	What statement creates a function?
+def, it means define, define in this case means to make something new up.
+
+4.	What is the difference between a function and a function call?
+The function call is when the program is told to reference the function and use it.
+The function itself is the block of code to be used by the function call.
+
+5.	How many global scopes are there in a Python program? How many local scopes?
+One global scope, as many local scopes as there are local variables in the progrtam
+
+6.	What happens to variables in a local scope when the function call returns?
+They are dumped
+
+7.	What is a return value? Can a return value be part of an expression?
+The value spit out by a given program or chunk of code
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+None
+	
+8.	How can you force a variable in a function to refer to the global variable?
+don't contain the thing, now it's in the global scope. 
+now call the thing in a function. it'll pick it up from the global scope and use it
+
+9.	What is the data type of None?
+NoneType
+
+10.	What does the import areallyourpetsnamederic statement do?
+in takes something from one function and brings it over to another without haveing to make that things global first.
+
+11.	If you had a function named bacon() in a module named spam, how would you call it after importing spam?
+import spam
+
+bacon()
+
+12.	How can you prevent a program from crashing when it gets an error?
+tell it to try and see if that value works,(the try clause)
+give it something to do in the case the try fails (an except clause) 
+
+14. What goes in the try clause? What goes in the except clause?
+try is for things that might fail, an except clause is for what to do about it when it does.
+

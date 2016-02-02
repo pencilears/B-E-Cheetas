@@ -1,0 +1,43 @@
+Katherine Powell
+Chapter 4 practice questions
+ITC110
+
+1.	[]  is two square brackets, for the purpose of this chapter  it is an empty list.
+
+2.	spam[3]  = ‘hello’
+
+3.	‘3’ is a string, this would error out.
+
+4.	The last entry in the spam[] list, so ‘d’
+
+5.	Ordinal counting strikes again, this is ‘c’
+
+6.	1 
+
+7.	[3.14, 'cat', 11, 'cat', True, 99,]
+
+8.	[3.14, 11, 'cat', True, 99,]
+
+9.	+ concatenates as usual, *and an integer replicates that specified number of times
+
+10.	Append puts it on the end, insert puts it anywhere you want it.
+
+11.	Remove and delete (del)  del is useful when you know where the thing you want to get
+rid of is on the index. Remove will just take out the first instance it finds in the list. 
+
+12.	They can be concatenated, you can have a string in your list, you can bring them up 
+like string values in the middle of other strings. A string is kinda like a list of chars. 
+And strings are apparently immutable in python. So that’s something.
+
+13.	You write a list with [] you write a tuple with () and tuples are like strings in 
+that they are not modifiable. You cannot modify, append, or remove the values in a tuple. 
+You do need a trailing comma though.
+
+14.	tuple(42,)
+
+15.	they can act like a function, list(nameOfTuple) will listify the tuple. tuple(nameOfList)
+will tupleify the list. At least I think so, this bit was not super clear.
+
+16.	A pointer to the list itself.
+
+17.	deepcopy will copy the inner lists

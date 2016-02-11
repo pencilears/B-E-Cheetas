@@ -1,0 +1,51 @@
+Yo, let’s play a game, what’s 
+Plot outline for game, you are a young merchant ready to set out on your first journey, this one should be easy it’s just to your grandma’s house
+Starting location, mom’s house. 
+You start off in the kitchen, your mother is out working but there is a small packet labeled [name]’s lunch on the countertop. Your pack is ready by the door. Your mother’s big black cat is snoozing in the windowstill’s morning light. 
+Pet the cat?
+  Mr Beans rubs his hand against your hand and purrs contentedly
+	  [change checkCat to True]
+Double check the pack?
+	Your pack contains 6 units of fresh water
+	Your wallet
+	Your phone
+	Your keys
+	A small notebook and a pen
+	Old person incontinence pads, light but bulky
+6 different paperbacks, their covers imply impossibly cool people with impossibly interesting lives need to solve yet another murder and also endure family dinner with their mom. There’s also one about a lawyer who lives out of his car, the rest use a skull somewhere in the cover imagery.
+	A plastic bottle of McNaulton’s 
+	A loaf of fresh bread
+	A can of grapefruit soda
+	A small pack of salami, the meat of peace!
+ 		[add to inventory :6 water, tutorialPack, phone, keys, notebook, Change checkPack to True]
+Check your lunch?
+	It’s leftovers from last night and a note on a paper napkin
+	[change checkLunch to true, add to inventory: 6 food]
+		Check napkin?
+			“I love you sweetie!” mom is the best
+			[add to inventory: momNapkinNote]
+				Leave her a note on the teapot [Y/N]? 
+[set the value of noteOne to True or False] //a False value will trigger worried mom events, a True Value will trigger the Call From Mom event//
+
+Get this party going? 
+[if checkCat, checkPack, and checkLunch are all True progress to next area, else print “aren’t you forgetting something?” if checkCat is False print “that cat looks so soft” if checkPack is False print “what’s even in this thing?” if checkLunch is false print “Breakfast is for suckers, lunch is not, you’re going to need that”
+
+[leaving the house]
+You step outside to a forest dripping with last night’s rain, a thousand tiny rainbows sparkle on the trees, it’d be beautiful if it wasn’t a lot earlier than you usually get up. Your gallant mechanical steed awaits. You load up your pack and check your directions, grandma doesn’t live too far away but if she doesn’t get her Mcnaulton’s before midafternoon she’d going to be cranky. 
+
+ Let’s blow this popsicle stand! 
+[three event triggers for this, easy, easy, and the call from your mother if noteOne is True, else another easy event, timecounter set to 0, if time reaches 5 grandma will be mad her liquor is late] 
+
+If noteOne = true
+your phone buzzes in your lap, luckily traffic has ground to a halt check phone? [y/n]
+[user choses y] you surreptitiously pull out your phone and check the message, mom got your note, tells you to ask grandma about the knickknacks when you get there]
+-time + 0
+Easy events-
+- A weasel runs across the road, you panic briefly but he cuts left when you cut right and everything is fine 
+-time +1
+-There’s some kind of an event going on where people on bicycles think it is legal to run red lights if they all do it at once together. There’s hundreds of them. The light flashes red, then green then red again as they stream past the three who have parked themselves in the intersection. You’ve heard that these events are for raising awareness of bicycling fatalities and asserting bicycling rights. Mostly you’re made aware of the number of people who ride with zero safety equipment then blame society when things go wrong, and how hard a hippie can sneer at your elderly vehicle. 
+	-time+3
+-Traffic is getting kinda gnarly up ahead, you slow down gradually in order to open up a gap in front of you, by the time you ease into it the traffic wave has dissipated. 
+	-time+1
+-they’re doing flight tests over the lake today, you see a huge shadow go overhead before the sonic boom hits. Damn that’s loud. also a small snarl forms as people slow down to look up and 
+	-time+2

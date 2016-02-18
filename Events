@@ -1,0 +1,16 @@
+Event library
+
+Easy events-
+
+- A weasel runs across the road, you panic briefly but he cuts left when you cut right and everything is fine 
+-time +1
+-There’s some kind of an event going on where people on bicycles think it is legal to run red lights if they all do it at once together. There’s hundreds of them. The light flashes red, then green then red again as they stream past the three who have parked themselves in the intersection. You’ve heard that these events are for raising awareness of bicycling fatalities and asserting bicycling rights. Mostly you’re made aware of the number of people who ride with zero safety equipment then blame society when things go wrong, and how hard a hippie can sneer at your elderly vehicle. 
+	-time+3
+-Traffic is getting kinda gnarly up ahead, you slow down gradually in order to open up a gap in front of you, by the time you ease into it the traffic wave has dissipated. 
+	-time+1
+-they’re doing flight tests over the lake today, you see a huge shadow go overhead before the sonic boom hits. Damn that’s loud. a small snarl of traffic forms as people slow down to look up. 
+	-time+2
+Rain on the roadway, some fool from California panicked about an hour ago and it’s still slow going
+	-time +2
+The road is smooth and clear.
+	-time -1

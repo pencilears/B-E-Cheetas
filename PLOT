@@ -40,12 +40,29 @@ If noteOne = true
 your phone buzzes in your lap, luckily traffic has ground to a halt check phone? [y/n]
 [user choses y] you surreptitiously pull out your phone and check the message, mom got your note, tells you to ask grandma about the knickknacks when you get there]
 -time + 0
-Easy events-
-- A weasel runs across the road, you panic briefly but he cuts left when you cut right and everything is fine 
--time +1
--There’s some kind of an event going on where people on bicycles think it is legal to run red lights if they all do it at once together. There’s hundreds of them. The light flashes red, then green then red again as they stream past the three who have parked themselves in the intersection. You’ve heard that these events are for raising awareness of bicycling fatalities and asserting bicycling rights. Mostly you’re made aware of the number of people who ride with zero safety equipment then blame society when things go wrong, and how hard a hippie can sneer at your elderly vehicle. 
-	-time+3
--Traffic is getting kinda gnarly up ahead, you slow down gradually in order to open up a gap in front of you, by the time you ease into it the traffic wave has dissipated. 
-	-time+1
--they’re doing flight tests over the lake today, you see a huge shadow go overhead before the sonic boom hits. Damn that’s loud. also a small snarl forms as people slow down to look up and 
-	-time+2
+ events are going to be theri own thing
+ 
+ You have arrived at your grandparent’s apartment, it’s in an older part of what is not the swanky part of town and they are very proud of their tiny-sliver of lake-view off their porch. 
+
+[If time <= 3 then cue happyGrandma]
+Grandma is very happy to see you, it’s just noon you offload the groceries while she fixes lunch for you and grandpa, he seems a little more together today, if just as frail when hugged. The ever present smell of pee and old tobacco is a little milder today and you all have a nice time over lunch not talking about politics. 
+[If time > = 3  then cue failGrandma]
+Everything is late, it is all your fault, grandma’s alcoholism is catching up with her and her attempts to replace liquor with black coffee would have better succeeded if she’s been limited to a cup and a half about two hours ago. You hug everyone and leave. The atmosphere is strained and she’s going to call your mother. 
+[Remove tutorialPack from inventory]
+On leaving your grandma’s house you spot a shiny glimmer in one of their neighbor Nancy’s flowerpots, you investigate and it appears to be an easter egg? 
+Pick up egg [Y/N]?
+If [Y] the egg is cool to the touch, a little larger than a chicken egg and appears seamless, it is shiny and a speckled froggy green color, the shell feels leathery and a faint peeping sound can be heard from within. 
+If [N] adventure is calling but adventure is lame and inconvenient. You are done with this nonsense and you are going home. (end game)
+Peep back ?
+you say “peep peep to you too, buddy” the eggs peeping begins to sound less frantic, it warms slightly in your hand as you hold it. 
+	[set dragon gender to M]
+			It’s obviously cold, warm it up
+You hold the egg in your hands and think about tall boys with wide shoulders and rascally smiles, you blush hugely and your hands get hot and sweaty. The egg seems to like this and the peeping takes a happier tenor
+	[set dragon gender to F]
+Throw it in the air
+You toss the egg up and catch it, the peeping sounds a little woozy, but it’s not as loud and that’s what we’re after.
+	[set dragon gender to X]
+You tuck the egg into your bra to keep warm, and return to your mighty steed. YOUR NEXT QUEST AWAITS!
+
+You have completed the tutorial quest! You have delivered important items to your grandma and you have picked up the ~mysterious egg ~ 
+

@@ -1,0 +1,39 @@
+Q. Write a program that finds all files with a given prefix, such as spam001.txt, 
+spam002.txt, and so on, in a single folder and locates any gaps in the numbering
+(such as if there is a spam001.txt and spam003.txt but no spam002.txt). 
+Have the program rename all the later files to close this gap.
+
+As an added challenge, 
+write another program that can insert gaps into numbered files so that a new file can be added.
+
+A.
+Ok, so the program needs to read the filenames, order them alphanumerically, and then read 
+through them one by one and find discrepancies,
+Huh, no, you could to count the total number of files, then look at the largest number in a filename, 
+compare the two. The difference is the number of files you will need to make to fill these gaps. 
+Honestly the laziest way is to count the total number of files, check if that agrees with the largest filename, 
+then if it doesn’t, just rename everything to count off from 1 until it runs out of files.
+
+-
+So at this point I googled for useful information, 
+because I’m not sure if that’s how to think my way through this problem. 
+Useful things 
+https://www.reddit.com/r/inventwithpython/ the subreddit specifically for these books 
+I searched this sub for other people with the same problem and found this person 
+https://www.reddit.com/r/inventwithpython/comments/3d6c6n/chapter_9_practice_problem_filling_the_gaps/ 
+“I created a regex with a group for the numbers following the prefix (e.g. example, spam). 
+I would then convert the group to an integer and check whether the following filename's 
+numbering was n + 1. The issue is that for numbers such as '001', it will always convert
+to and integer of '1'. Is there a better way to check whether the numbers are in proper 
+sequence without converting the string to an integer? Thansk!” 
+
+So they got no responses to that, but a regex is an interesting way for me to think about the problem.
+I googled for more people working on this problem and found this on stack overflow 
+http://stackoverflow.com/questions/35447755/first-practice-project-in-automate-the-boring-stuff-with-python-ch-9 
+unfortunately it’s for the wrong problem, further searches on stack overflow for stuff from this book seemed pretty light. 
+
+I went back to the book and read through the chapter.
+-
+Yeah, there must be a way to check every name and actually find the gaps, 
+but that’s tricky, and I’m a sledgehammer kind of girl. 
+I’m not going to bother to code this out for the same reason you’re not bothering to grade it. 

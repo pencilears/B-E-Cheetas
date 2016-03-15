@@ -1,0 +1,73 @@
+alright, I took a look at the code and figured the best way to find problems was 
+to throw it into trinket and see if it even runs, the vast majority of the errors I have encountered 
+seemt to have involved improper spacing and syntax that has rendered the programs un-runable
+that is not the case with this little sample program. it runs. 
+
+https://trinket.io/python/14bbe0ceaf
+
+with one cavieat, it seems to never give a correct answer. I can guess heads untill the cows come home
+I will never get the response indicating the computer thinks my guess is in line with the result it got. 
+this appears to be the major malfunction so let's go over this thing line by line and figure ot what each
+line is supposed to be doing vs, what it is doing.
+
+import random #this brings in the random function so we can find random integers
+guess = ''                                              #creates the variable guess and sets it's initial value to a string with nothng in it
+while guess not in ('heads', 'tails'):                  #it wants you the player to type heads or tails exactly and will only accept those inputs
+    print('Guess the coin toss! Enter heads or tails:') #if you haven't done that, or you write something else, it spits this out
+    guess = input()                                     #sets the variable guess to be the same as what you put into the box, can only be heads or tails
+toss = random.randint(0, 1) # 0 is tails, 1 is heads    #variable toss is a random integer between 1 and 0
+if toss == guess:                                       #if toss = guess say it's correct and print the thing, ahh but guess is always going to be tails or heads, where toss can only be 1 or 0, they will never agree
+    print('You got it!')
+else:
+    print('Nope! Guess again!')
+    guesss = input()
+    if toss == guess:
+       print('You got it!')
+    else:
+        print('Nope. You are really bad at this game.')
+
+
+ok, first problem found, this game compaires toss to guess like how one might compare strings to integers or apples to rocks
+it's never going to print a good answer with that, so my first reaction is to just ask for diffrent inputs, 
+if I ask for a 1 or a 0 and compair to a 1 or a 0 that should work.
+
+hummm, still not granting any correct answers, I suspect I am entering my input as a string that looks like an integer, tricky. 
+what happens if I take the '' marks out of the guess variable? 
+I get a bad input error, hum. what if I take the '' marks out of the brackets? and tell guess it's a int? (which resolves the last error)
+humm, it turns those from strings to integers, but when i try to play the game it spits back the message 
+that it's not accepting the input as a valid guess at all
+let's say 1 or 0 see if that runs
+well, it would've worked in SQL, python dosen't like it
+
+eeeugh, guess I need to convert the output of toss to a string. (that's at least one answer to this problem)
+ok, I have converted toss to pick a number, and then make that number a string, should be '1' or '0'
+ran that, it runs, sweet
+but oh no, it's still throwing me false results no matter what
+alright, is our number picker bad?. are we picking bad numbers? lets try picking between 1 or 2
+that seems to run
+wait a sec, there's a spelling error. guess is spelled guesss, 
+and
+it runs!!!!!!!
+
+ok, I suppose I could get fancy and make it take string inputs, 
+turn them into integers, compaire those to the output of random.randint 
+but I'm lazy. so nahh.
+
+import random
+guess = ''
+while guess not in ('1', '2'):
+    print('Guess the coin toss! Enter 1 for heads or 2 for tails:')
+    guess = input()
+toss = random.randint(1, 2)
+toss = str(toss)
+if toss == guess:
+    print('You got it!')
+else:
+    print('Nope! Guess again!')
+    guess = input()
+    if toss == guess:
+       print('You got it!')
+    else:
+        print('Nope. You are really bad at this game.') 
+
+is my final fixed version. tadah!
